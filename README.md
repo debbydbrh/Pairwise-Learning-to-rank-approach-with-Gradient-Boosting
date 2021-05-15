@@ -5,10 +5,10 @@ _Learning to Rank_ adalah bagian dari penerapan machine learning dalam pembangun
 Million queries dataset from TREC 2008 :
 [MQ2008](https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/#!letor-4-0)
 
-| Dataset name |       | rows   | columns | y distribution                                                 | num samples in queries (min, median, max) | 
-|--------------|-------|--------|---------|----------------------------------------------------------------|-------------------------------------------| 
-| mq2008       | train | 9630   | 46      | {0.0: 7820, 1.0: 1223, 2.0: 587}                               | (5, 8, 121)                               | 
-|              | test  | 2874   | 46      | {0.0: 2319, 1.0: 378, 2.0: 177}                                | (6, 14, 119)                              | 
+| Dataset name |       | rows   | columns | num samples in queries (min, median, max) | 
+|--------------|-------|--------|---------|-------------------------------------------| 
+| mq2008       | train | 9630   | 46      | (5, 8, 121)                               | 
+|              | test  | 2874   | 46      | (6, 14, 119)                              | 
 
 ### Parameter
 Untuk membangun model perankingan digunakan XGBRanker dimana parameter yang digunakan adalah sebagai berikut:
