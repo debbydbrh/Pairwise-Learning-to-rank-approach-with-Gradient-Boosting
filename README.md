@@ -36,4 +36,5 @@ n_estimators : 4
 
 Rata - rata skor NDCG kelima Fold : 0.806106
 
-Skor NDCG  kelima fold atau rata-rata skor NDCG setiap _fold_ yaitu  0.806106 dari 1 (_perfect ranking_). Skor NDCG ini membuktikan bahwa penerapan algoritma XGBranker dan pendekatan _pairwise_ sebagai pendekatan untuk membangun model _Learning to Rank_, menghasilkan skor NDCG yang baik untuk setiap 5 Fold partisi dataset LETOR 4.0 MQ2008 dan kualitas perankingan yang dihasilkan oleh model juga sudah baik.
+Skor NDCG  kelima fold atau rata-rata skor NDCG setiap _fold_ yaitu  0.806106 dari 1 (_perfect ranking_). 
+Skor NDCG ini membuktikan bahwa penerapan algoritma _gradient tree boosting_ dan pendekatan _pairwise_ sebagai pendekatan untuk membangun model _Learning to Rank_, menghasilkan skor NDCG yang baik untuk setiap 5 Fold partisi dataset LETOR 4.0 MQ2008 dan kualitas perankingan yang dihasilkan oleh model juga sudah baik.
