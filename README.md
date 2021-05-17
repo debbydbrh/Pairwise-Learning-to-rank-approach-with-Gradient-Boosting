@@ -11,7 +11,7 @@ Million queries dataset from TREC 2008 :
 |              | test  | 2874   | 46      | (6, 14, 119)                              | 
 
 ### Parameter
-Untuk membangun model perankingan digunakan XGBRanker dimana parameter yang digunakan adalah sebagai berikut:
+Untuk membangun model perankingan digunakan library XGBoost yang memanfaatkan _packages_ XGBRanker dimana parameter yang digunakan adalah sebagai berikut:
 
 ```
 ...
