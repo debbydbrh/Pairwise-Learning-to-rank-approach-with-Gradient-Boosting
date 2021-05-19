@@ -25,9 +25,12 @@ with open("mq2008.test.group", "r") as f:
     for line in data:
         group_test.append(int(line.split("\n")[0]))
 
+# Parameters for learning to rank using pairwise and ndcg for evaluation
 params = {'objective': 'rank:pairwise', 'eval_metric': 'ndcg', 'learning_rate': 0.1,
           'gamma': 1.0, 'min_child_weight': 0.1,
           'max_depth': 6, 'n_estimators': 4}
+          
+# Ranking using XGBRanker algorithm
 model = xgb.sklearn.XGBRanker(**params)
 model.fit(x_train, y_train, group_train, verbose=True,
           eval_set=[(x_valid, y_valid)], eval_group=[group_valid])
